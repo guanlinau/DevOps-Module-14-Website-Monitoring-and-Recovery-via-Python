@@ -32,10 +32,36 @@ Python, Linode, Docker, Linux
 
 ![image](images/Screenshot%202023-04-16%20at%208.10.31%20pm.png)
 
-###### Step 4- Monitor the website by accessing it and validating the HTTP response
+###### Step 4: Fill the env variables in to a .env file under the root directory
+```
+EMAIL_ADDRESS=
+PASSWORD=
+
+NGINX_WEB_PORT=
+
+USERNAME=
+KEY_FILENAME=
+NGINX_CONTAINER_ID=
+
+WEBSITE_NGINX_SEVER_INSTANCE_ID=
+```
+
+###### Step 5-Create requirements.txt and install the related libraries
+```
+pip freeze > requirements.txt
+```
+#Install boto3, schedule, paramiko, requests, python-dotenv library 
+```
+pip install -r requirements.txt
+```
+
+###### Step 6- Monitor the website by accessing it and validating the HTTP response
 ![image](images/Screenshot%202023-04-16%20at%208.33.03%20pm.png)
 
-###### Step 5- Send an email notification when website is down or timeout
+###### Step 7- Send an email notification when website is down or timeout
 
 ![image](images/Screenshot%202023-04-16%20at%2010.31.47%20pm.png)
 ![image](images/Screenshot%202023-04-16%20at%2010.38.55%20pm.png)
+
+###### Step 8- Reboot and restart the server and container 
+![image](images/Screenshot%202023-04-17%20at%201.48.51%20pm.png)
